@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PanelProsesor Login</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#111;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.login-box{
+    background:#222;
+    padding:30px;
+    border-radius:12px;
+    width:320px;
+    box-shadow:0 0 15px rgba(0,0,0,0.5);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#fff;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:8px 0;
+    border:1px solid #555;
+    border-radius:6px;
+    outline:none;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:none;
+    border-radius:6px;
+    background:#28a745;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#218838;
+}
+
+#pesan{
+    text-align:center;
+    margin-top:10px;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+    <h2>PanelProsesor</h2>
+
+    <input type="text" id="user" placeholder="Username">
+    <input type="password" id="pass" placeholder="Password">
+
+    <button onclick="login()">LOGIN</button>
+
+    <p id="pesan"></p>
+</div>
+
+<script>
+function login(){
+    document.getElementById("pesan").innerHTML =
+    "Login berhasil! (Demo)";
+}
+</script>
+
+</body>
+</html>
